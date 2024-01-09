@@ -22,7 +22,8 @@ return {
   ft = { "go", "gomod" },
   build = ':lua require("go.install").update_all_sync()',
   keys = {
-    { "<leader>r", "<cmd>GoRun<cr>", desc = "Go Run" },
+    { "<leader>gr", "<cmd>GoRun<cr>", desc = "Go Run" },
+    { "<leader>gt", "<cmd>GoTest<cr>", desc = "Go Test" },
     { "<leader>gat", "<cmd>GoAddTag<cr>", desc = "Add json tags" },
     { "<leader>gam", "<cmd>GoAddTag mapstructure<cr>", desc = "Add mapstructure tags" },
     { "<leader>gae", "<cmd>GoAddTag env<cr>", desc = "Add env tags" },
