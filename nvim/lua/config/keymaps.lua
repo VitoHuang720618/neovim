@@ -9,6 +9,8 @@ local Util = require("lazyvim.util")
 -- use `vim.keymap.set` instead
 local map = Util.safe_keymap_set
 
-map("n", "<C-e>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+-- map("n", "<C-e>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
-map("n", "<leader>d", "<cmd>bdelete<cr>", { desc = "delete buffer" })
+-- map("n", "<leader>d", "<cmd>bdelete<cr>", { desc = "delete buffer" })
+
+map("n", "<leader>d", ":bp|bd #<CR>", { desc = "delete buffer" })
