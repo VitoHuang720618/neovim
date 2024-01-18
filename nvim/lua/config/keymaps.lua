@@ -14,3 +14,9 @@ local map = Util.safe_keymap_set
 -- map("n", "<leader>d", "<cmd>bdelete<cr>", { desc = "delete buffer" })
 
 map("n", "<leader>d", ":bp|bd #<CR>", { desc = "delete buffer" })
+
+-- Resize window
+vim.keymap.set("n", "<C-w><left>", "<C-w><")
+vim.keymap.set("n", "<C-w><right>", "<C-w>>")
+vim.keymap.set("n", "<C-w><up>", "<C-w>+")
+vim.keymap.set("n", "<C-w><down>", "<C-w>-")

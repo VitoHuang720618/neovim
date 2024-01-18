@@ -1,5 +1,25 @@
 return {
   {
+    {
+      "williamboman/mason.nvim",
+      opts = {
+        -- 開啟服務server
+        ensure_installed = {
+          "gopls",
+          "goimports",
+          "stylua",
+          "selene",
+          "luacheck",
+          "shellcheck",
+          "shfmt",
+          "tailwindcss-language-server",
+          "typescript-language-server",
+          "css-lsp",
+        },
+      },
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
       server = {
